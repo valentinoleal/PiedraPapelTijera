@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- 
+
+IG: @tinooleal
+
+-->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Piedra papel tijeras</title>
+</head>
+<body>
+    <div class="contenedor" id="contenedor">
+        <h1>Dev: Valentino Leal</h1>
+        <div class="todo">
+            <div class="estadisticas">
+                <h2>Ganados <span id="ganados">0</span></h2>
+                <h2>Empates <span id="empates">0</span></h2>
+                <h2>Perdidos <span id="perdidos">0</span></h2>
+            </div>
+            <div class="rondas">
+                <h3>Ronda <span id="rondas">0</span></h3>
+                <hr>
+                <h3><span id="ronda-actual">.</span></h3>
+                <hr>
+            </div>
+            <div class="jugador">
+                <h4 id="nombre-usuario"></h4>
+                <div class="carta">
+                    <p id="jugador"></p>
+                </div>
+                <code>Cambiar nombre de usuario</code>
+                <button class="btn" name="piedra" type="submit">✊</button>
+                <button class="btn" name="papel" type="submit">👋</button>
+                <button class="btn" name="tijeras" type="submit">✌️</button>
+            </div>
+            <div class="maquina">
+                <h4>Máquina</h4>
+                <div class="carta">
+                    <p id="maquina"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="entrada-carta" id="entrada-carta">
+        <h1>Ingresa tu nombre de usuario</h1>
+        <input type="text" id="nuevo-nick" placeholder="Nuevo nick..." />
+        <button id="enviar-nick">Enviar</button>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
